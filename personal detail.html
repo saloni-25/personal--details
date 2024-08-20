@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Details Form </title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            padding: 0;
+            background-color: #a8ce00; /* Parrot green background */
+        }
+        h2 {
+            color: #333;
+        }
+        form {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        label {
+            display: block;
+            margin-bottom: 8px;
+            color: #555;
+        }
+        input[type="text"], input[type="email"], input[type="password"], textarea, select {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+        input[type="file"] {
+            margin-top: 10px;
+            margin-bottom: 20px;
+        }
+        input[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+
+
+    <h2>Personal Details Form</h2>
+    <form action="#" method="post" enctype="multipart/form-data">
+        <fieldset>
+            <legend>Personal Information</legend>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+
+
+            <label for="email">Email ID:</label>
+            <input type="email" id="email" name="email" required>
+
+
+            <label for="gender">Gender:</label>
+            <select id="gender" name="gender" required>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+            </select>
+        </fieldset>
+
+
+        <fieldset>
+           
+                <legend>Education Qualification</legend>
+               
+                <label for="degree">Degree:</label>
+                <select id="degree" name="degree" required>
+                    <option value="bachelor">Bachelor's</option>
+                    <option value="master">Master's</option>
+                    <option value="phd">Ph.D.</option>
+                    <option value="diploma">Diploma</option>
+                    <option value="associate">Associate Degree</option>
+                </select>
+           
+                <label for="field">Field of Study:</label>
+                <select id="field" name="field" required>
+                    <option value="engineering">Engineering</option>
+                    <option value="computer_science">Computer Science</option>
+                    <option value="business">Business</option>
+                    <option value="arts">Arts</option>
+                    <option value="medicine">Medicine</option>
+                    <option value="law">Law</option>
+                    <option value="education">Education</option>
+                    <option value="other">Other</option>
+                </select>
+           
+           
+        </fieldset>
+
+
+        <fieldset>
+            <legend>Hobbies</legend>
+           
+            <label for="hobbies">Select your hobbies:</label><br>
+       
+            <input type="checkbox" id="chess" name="hobbies" value="playing_chess">
+            <label for="chess">Playing Chess</label><br>
+       
+            <input type="checkbox" id="reading" name="hobbies" value="reading_books">
+            <label for="reading">Reading Books</label><br>
+        </fieldset>
+       
+
+
+        <fieldset>
+            <legend>Address</legend>
+            <label for="address">Address:</label>
+            <textarea id="address" name="address" rows="4" required></textarea>
+        </fieldset>
+
+
+        <fieldset>
+            <legend>Attach Resume</legend>
+            <label for="resume">Choose file:</label>
+            <input type="file" id="resume" name="resume" accept=".pdf,.doc,.docx" required>
+        </fieldset>
+
+
+        <input type="submit" value="Submit">
+    </form>
+
+
+</body>
+</html>
+
+
